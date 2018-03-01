@@ -10,7 +10,7 @@ import java.util.Collection;
 import static lombok.AccessLevel.NONE;
 
 @Value
-public class SimpleAuthor implements Author {
+public class SimpleAuthor /*implements Author */{
     Collection<Book> books;
 
     @Delegate

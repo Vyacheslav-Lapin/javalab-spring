@@ -1,7 +1,6 @@
 package lab.mvc;
 
 import lab.mvc.form.bean.CountryFormBean;
-import lab.mvc.form.bean.UserFormBean;
 import lab.service.CountryService;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -19,8 +18,8 @@ import static lombok.AccessLevel.PRIVATE;
 @AllArgsConstructor
 public class CountryFormController {
 
-    private static final String ADD_USER_FORM_VIEW = "addCountryForm";
-    private static final String USER_LIST_VIEW = "countryListView";
+    private static final String ADD_COUNTRY_FORM_VIEW = "addCountryForm";
+    private static final String COUNTRY_LIST_VIEW = "countryList";
 
     CountryService countryService;
 

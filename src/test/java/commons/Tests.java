@@ -21,7 +21,7 @@ public interface Tests {
 
     static Person getExpectedPerson() {
         return new UsualPerson(
-                1,
+                1L,
                 "John",
                 "Smith",
                 new SimpleCountry(1L, "Russia", "RU"),
@@ -30,8 +30,8 @@ public interface Tests {
                 true,
                 false,
                 Arrays.asList(
-                        new SimpleContact("TELEPHONE", "222-33-22"),
-                        new SimpleContact("EMAIL", "jkhafg@kjhsd.ru")));
+                        new SimpleContact(0L, "TELEPHONE", "222-33-22"),
+                        new SimpleContact(1L, "EMAIL", "jkhafg@kjhsd.ru")));
     }
 
     @SneakyThrows

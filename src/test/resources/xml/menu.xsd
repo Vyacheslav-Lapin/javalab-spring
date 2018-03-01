@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://epam.com/spb/javalab/xml/menu"
+        xmlns:tns="http://epam.com/spb/javalab/xml/menu"
+        elementFormDefault="qualified"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+
+    <element name="breakfast-menu">
+        <complexType>
+            <sequence>
+                <element name="food" type="tns:food" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+     
+    <complexType name="food">
+        <sequence>
+            <element name="name" type="token"/>
+            <element name="price" type="token"/>
+            <element name="description" type="string"/>
+            <element name="calories" type="int"/>
+        </sequence>
+        <attribute name="id" type="int"/>
+    </complexType>
+</schema>

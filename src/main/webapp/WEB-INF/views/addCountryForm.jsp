@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<h3><spring:message code="form.addUser.name"/></h3>
+<h3><spring:message code="form.addCountry.name"/></h3>
 <form:form modelAttribute="countryFormBean">
     <table>
         <tr>

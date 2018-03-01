@@ -13,12 +13,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import static lombok.AccessLevel.PRIVATE;
+import static lombok.AccessLevel.PUBLIC;
 
 @Data
 @Entity
 @Builder
 @Table(name = "Country")
-@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor(access = PUBLIC)
 public class SimpleCountry implements Country {
 
     @Id
